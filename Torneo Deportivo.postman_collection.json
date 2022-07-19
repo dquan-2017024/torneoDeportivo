@@ -1,0 +1,636 @@
+{
+	"info": {
+		"_postman_id": "91524041-2a50-43d6-b400-41f46262d455",
+		"name": "Torneo Deportivo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "s",
+							"host": [
+								"s"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "Daniel",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:4000/user/login",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjcwNjdhNDFjNTY3MTIxNTUzNWQ2ZGEiLCJ1c2VybmFtZSI6IkFETUlOIiwicGFzc3dvcmQiOiIkMmEkMTAkTTF5VXlkTnlGU016ZldKYm4zZlNjTzl3bG1YeHJ3WmJwemJJSjVSZWxGdVlySXN3ZENwTTYiLCJuYW1lIjoiQURNSU4iLCJwaG9uZSI6IjEyMzQ1Njc4IiwiZW1haWwiOiJhZG1pbkBnbWFpbC5jb20iLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE2NTE2MTc3MTMsImV4cCI6MTY1MTYyMTMxM30.sVIdwC8rgPB2uCvQkaKbbSjyx6v550BX_xakidjDebw",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "ADMIN1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:4000/user/update/627067a41c5671215535d6da",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"user",
+								"update",
+								"627067a41c5671215535d6da"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getClients",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjcwNjdhNDFjNTY3MTIxNTUzNWQ2ZGEiLCJ1c2VybmFtZSI6IkFETUlOIiwicGFzc3dvcmQiOiIkMmEkMTAkTTF5VXlkTnlGU016ZldKYm4zZlNjTzl3bG1YeHJ3WmJwemJJSjVSZWxGdVlySXN3ZENwTTYiLCJuYW1lIjoiQURNSU4iLCJwaG9uZSI6IjEyMzQ1Njc4IiwiZW1haWwiOiJhZG1pbkBnbWFpbC5jb20iLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE2NTE1NDU4MjYsImV4cCI6MTY1MTU0OTQyNn0.ZhBa42zR5O2Nn8-KpcODMASelWGTDpv6upONLf1NZBI",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:4000/user/getClients",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"user",
+								"getClients"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createAdmin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:4000/user/createAdmin",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"user",
+								"createAdmin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteClient",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjcwNjdhNDFjNTY3MTIxNTUzNWQ2ZGEiLCJ1c2VybmFtZSI6IkFETUlOIiwicGFzc3dvcmQiOiIkMmEkMTAkTTF5VXlkTnlGU016ZldKYm4zZlNjTzl3bG1YeHJ3WmJwemJJSjVSZWxGdVlySXN3ZENwTTYiLCJuYW1lIjoiQURNSU4iLCJwaG9uZSI6IjEyMzQ1Njc4IiwiZW1haWwiOiJhZG1pbkBnbWFpbC5jb20iLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE2NTE1NDU4MjYsImV4cCI6MTY1MTU0OTQyNn0.ZhBa42zR5O2Nn8-KpcODMASelWGTDpv6upONLf1NZBI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "localhost:4000/user/deleteClient/62704b7f873a6f9d718544a5",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"user",
+								"deleteClient",
+								"62704b7f873a6f9d718544a5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateClient",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjcwNjdhNDFjNTY3MTIxNTUzNWQ2ZGEiLCJ1c2VybmFtZSI6IkFETUlOIiwicGFzc3dvcmQiOiIkMmEkMTAkTTF5VXlkTnlGU016ZldKYm4zZlNjTzl3bG1YeHJ3WmJwemJJSjVSZWxGdVlySXN3ZENwTTYiLCJuYW1lIjoiQURNSU4iLCJwaG9uZSI6IjEyMzQ1Njc4IiwiZW1haWwiOiJhZG1pbkBnbWFpbC5jb20iLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE2NTE1NDU4MjYsImV4cCI6MTY1MTU0OTQyNn0.ZhBa42zR5O2Nn8-KpcODMASelWGTDpv6upONLf1NZBI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "asd",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "role",
+									"value": "ADMIN",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:4000/user/updateClient/6270970e1ad6b0a9c52c1b7f",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"user",
+								"updateClient",
+								"6270970e1ad6b0a9c52c1b7f"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "League",
+			"item": [
+				{
+					"name": "createLeague",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjcxYjFmMjdmYjViZWRkNmYyMzFhYzYiLCJ1c2VybmFtZSI6IkFETUlOIiwicGFzc3dvcmQiOiIkMmEkMTAkT1pEMkdyejRBL24vVGZoSi9MbzRudVZORjRLcUlzWGp1ZlZHaG1lbkpsbDhIblJBeVNMZFMiLCJuYW1lIjoiQURNSU4iLCJwaG9uZSI6IjEyMzQ1Njc4IiwiZW1haWwiOiJhZG1pbkBnbWFpbC5jb20iLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE2NTE2MjQzMDYsImV4cCI6MTY1MTYyNzkwNn0.blf4ujoA2XhF3kWcVy6EPbhHT40wFYsMfiytasssomE",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "asdasdf",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:4000/league/createLeague",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"league",
+								"createLeague"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getLeagues",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "updateLeague",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjcxYjFmMjdmYjViZWRkNmYyMzFhYzYiLCJ1c2VybmFtZSI6IkFETUlOIiwicGFzc3dvcmQiOiIkMmEkMTAkT1pEMkdyejRBL24vVGZoSi9MbzRudVZORjRLcUlzWGp1ZlZHaG1lbkpsbDhIblJBeVNMZFMiLCJuYW1lIjoiQURNSU4iLCJwaG9uZSI6IjEyMzQ1Njc4IiwiZW1haWwiOiJhZG1pbkBnbWFpbC5jb20iLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE2NTE2MzA3MzIsImV4cCI6MTY1MTcxNzEzMn0.wnl5GcCbA26c3vm10ihhJSnlnqwkYgRe9skhh5WIbCA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "asdasdf",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:4000/league/updateLeague/6271ca17a00b710f0e121427",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"league",
+								"updateLeague",
+								"6271ca17a00b710f0e121427"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteLeague",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "yJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjcxYjFmMjdmYjViZWRkNmYyMzFhYzYiLCJ1c2VybmFtZSI6IkFETUlOIiwicGFzc3dvcmQiOiIkMmEkMTAkT1pEMkdyejRBL24vVGZoSi9MbzRudVZORjRLcUlzWGp1ZlZHaG1lbkpsbDhIblJBeVNMZFMiLCJuYW1lIjoiQURNSU4iLCJwaG9uZSI6IjEyMzQ1Njc4IiwiZW1haWwiOiJhZG1pbkBnbWFpbC5jb20iLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE2NTE2MzI0MzgsImV4cCI6MTY1MTcxODgzOH0.p2inF-So9P8oBhWziEV7SOZ_L0LcwVJtsLc4PPe6_EY",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:4000/league/deleteLeague/6271e3d474c46db7f40b1b45",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"league",
+								"deleteLeague",
+								"6271e3d474c46db7f40b1b45"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "saveLeague",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:4000/league/saveLeague",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"league",
+								"saveLeague"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjcxYjFmMjdmYjViZWRkNmYyMzFhYzYiLCJ1c2VybmFtZSI6IkFETUlOIiwicGFzc3dvcmQiOiIkMmEkMTAkT1pEMkdyejRBL24vVGZoSi9MbzRudVZORjRLcUlzWGp1ZlZHaG1lbkpsbDhIblJBeVNMZFMiLCJuYW1lIjoiQURNSU4iLCJwaG9uZSI6IjEyMzQ1Njc4IiwiZW1haWwiOiJhZG1pbkBnbWFpbC5jb20iLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE2NTE2OTgyMDAsImV4cCI6MTY1MTc4NDYwMH0.rs-_-ZFfFcefqob_teaNrpaV4T8gYZ9cYCdZKe4ykZs",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:4000/league/obtainLeagues",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"league",
+								"obtainLeagues"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "editLeague",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjcxYjFmMjdmYjViZWRkNmYyMzFhYzYiLCJ1c2VybmFtZSI6IkFETUlOIiwicGFzc3dvcmQiOiIkMmEkMTAkT1pEMkdyejRBL24vVGZoSi9MbzRudVZORjRLcUlzWGp1ZlZHaG1lbkpsbDhIblJBeVNMZFMiLCJuYW1lIjoiQURNSU4iLCJwaG9uZSI6IjEyMzQ1Njc4IiwiZW1haWwiOiJhZG1pbkBnbWFpbC5jb20iLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE2NTE2OTgyMDAsImV4cCI6MTY1MTc4NDYwMH0.rs-_-ZFfFcefqob_teaNrpaV4T8gYZ9cYCdZKe4ykZs",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "asdsfsd",
+									"type": "text"
+								},
+								{
+									"key": "user",
+									"value": "as",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:4000/league/editLeague/6271ca17a00b710f0e121427",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"league",
+								"editLeague",
+								"6271ca17a00b710f0e121427"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "removeLeague",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjcxYjFmMjdmYjViZWRkNmYyMzFhYzYiLCJ1c2VybmFtZSI6IkFETUlOIiwicGFzc3dvcmQiOiIkMmEkMTAkT1pEMkdyejRBL24vVGZoSi9MbzRudVZORjRLcUlzWGp1ZlZHaG1lbkpsbDhIblJBeVNMZFMiLCJuYW1lIjoiQURNSU4iLCJwaG9uZSI6IjEyMzQ1Njc4IiwiZW1haWwiOiJhZG1pbkBnbWFpbC5jb20iLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE2NTE2OTgyMDAsImV4cCI6MTY1MTc4NDYwMH0.rs-_-ZFfFcefqob_teaNrpaV4T8gYZ9cYCdZKe4ykZs",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:4000/league/removeLeague/6271e2610f1544ac0c0e89bf",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"league",
+								"removeLeague",
+								"6271e2610f1544ac0c0e89bf"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Team",
+			"item": [
+				{
+					"name": "createTeam",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjcxZTIyNTBmMTU0NGFjMGMwZTg5YjQiLCJ1c2VybmFtZSI6IkRhbmllbDEiLCJwYXNzd29yZCI6IiQyYSQxMCRHbWFWbk0uL0l6NkUuYWg1MlNKbnhlRUQyOUlrNHo0eW54YjdiZ1pGQVJvZW5jeVE2SmhKeSIsIm5hbWUiOiJEYW5pZWwxIiwic3VybmFtZSI6IlDDqXJleiIsInBob25lIjoiMTIzNDU2NzgiLCJlbWFpbCI6ImRwZXJlekBnbWFpbC5jb20iLCJyb2xlIjoiQ0xJRU5UIiwiaWF0IjoxNjUxNjM1OTc4LCJleHAiOjE2NTE3MjIzNzh9.lLBiRljJPF3DlphKHCAifSQwkUUMo0gTQ_aT35Yd0es",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "a",
+									"type": "text"
+								},
+								{
+									"key": "league",
+									"value": "6271e2610f1544ac0c0e89bf",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:4000/team/createTeam",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"team",
+								"createTeam"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getTeams",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "updateTeam",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjcxYjFmMjdmYjViZWRkNmYyMzFhYzYiLCJ1c2VybmFtZSI6IkFETUlOIiwicGFzc3dvcmQiOiIkMmEkMTAkT1pEMkdyejRBL24vVGZoSi9MbzRudVZORjRLcUlzWGp1ZlZHaG1lbkpsbDhIblJBeVNMZFMiLCJuYW1lIjoiQURNSU4iLCJwaG9uZSI6IjEyMzQ1Njc4IiwiZW1haWwiOiJhZG1pbkBnbWFpbC5jb20iLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE2NTE2ODA1MjYsImV4cCI6MTY1MTc2NjkyNn0.8niaibZKlYmxnXSOhV4_9Sg-BBEyqi8ozmOsxpNLtgk",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "as",
+									"type": "text"
+								},
+								{
+									"key": "league",
+									"value": "6271e2610f1544ac0c0e89bf",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "points",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:4000/team/updateTeam/6271f6d42e8bab0377f3086a",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"team",
+								"updateTeam",
+								"6271f6d42e8bab0377f3086a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteTeam",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "orderTeams",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2Mjc1OTYxMjRkMDFkNzQxNjY5NjdlMmMiLCJ1c2VybmFtZSI6IkFETUlOIiwicGFzc3dvcmQiOiIkMmEkMTAkamsueDE1eHROUWJ4V0ZQVXBDeUU0dW1TQ25sV202WHlHeGVYL2ZQejFEd1YzcWx4ZkNaUXUiLCJuYW1lIjoiQURNSU4iLCJwaG9uZSI6IjEyMzQ1Njc4IiwiZW1haWwiOiJhZG1pbkBnbWFpbC5jb20iLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE2NTE4NzMzMTYsImV4cCI6MTY1MTk1OTcxNn0.tpFy_kvfiHf63uw6Jqb9xu-lt0NWS4NV1Ng-B0gyBmw",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:4000/team/orderTeams/627596334d01d74166967e30",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"team",
+								"orderTeams",
+								"627596334d01d74166967e30"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "MatchDay",
+			"item": [
+				{
+					"name": "addResult",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjcxYjFmMjdmYjViZWRkNmYyMzFhYzYiLCJ1c2VybmFtZSI6IkFETUlOIiwicGFzc3dvcmQiOiIkMmEkMTAkT1pEMkdyejRBL24vVGZoSi9MbzRudVZORjRLcUlzWGp1ZlZHaG1lbkpsbDhIblJBeVNMZFMiLCJuYW1lIjoiQURNSU4iLCJwaG9uZSI6IjEyMzQ1Njc4IiwiZW1haWwiOiJhZG1pbkBnbWFpbC5jb20iLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE2NTE4MTI3NTIsImV4cCI6MTY1MTg5OTE1Mn0.mpfF4rLXznUt1j5YaXpp5-bBk_nq78a1zBGRYoObh8M",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "number",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "localTeam",
+									"value": "6274b140cd6a57db13596d4f",
+									"type": "text"
+								},
+								{
+									"key": "localGoals",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "visitorTeam",
+									"value": "6274adecd049abee26459e7d",
+									"type": "text"
+								},
+								{
+									"key": "visitorGoals",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "league",
+									"value": "6272b84a10024142335d2660",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:4000/matchDay/addResult",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"matchDay",
+								"addResult"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
